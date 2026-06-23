@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync Wayland/X11 PRIMARY selection (highlight) into the CLIPBOARD
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/selsync
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

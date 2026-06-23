@@ -1,0 +1,4 @@
+gen/
+selsync
+selsync.asan
+*.o
